@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Hello World</title>
-  <script src="markdown-js/markdown.js"></script>
-  <script>
-    md_content = "Hello.\n\n* This is markdown.\n* It is fun\n* Love it or leave it."
-    html_content = markdown.toHTML( md_content );
-    $("body").html(html_content);
-  </script>
+  <script src="markdown/markdown.js"></script>
+  <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
 </head>
 <body>
 </body>
+<script>
+  var title = window.location.search.replace("?title=", ""),
+      titles = {"nodeLearning":"nodeLearning/nodeEnv.md"};
+  $.get("./md/" + (title && titles[title]?titles[title]:"index.md"), function(md_content) {
+    html_content = markdown.toHTML( md_content );
+    $("body").html(html_content);
+  });
+
+</script>
 </html>
