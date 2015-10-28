@@ -1,7 +1,15 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World</title>
+  <script src="markdown-js/markdown.js"></script>
+  <script>
+    md_content = "Hello.\n\n* This is markdown.\n* It is fun\n* Love it or leave it."
+    html_content = markdown.toHTML( md_content );
+    $("body").html(html_content);
+  </script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
 </body>
 </html>
