@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bd5532b-9257-4d1b-94bb-af3bdf93084e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markdown/markdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/md/nodeLearning/nodeEnv.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markdown-js/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markdown-js/dialects/dialect_helpers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markdown-js/dialects/gruber.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markdown-js/dialects/maruku.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markdown-js/markdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markdown-js/markdown_helpers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markdown-js/parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markdown-js/render_tree.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/md/index.md" afterPath="$PROJECT_DIR$/md/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/md/nodeLearning/nodeEnv.md" afterPath="$PROJECT_DIR$/md/nodeLearning/nodeEnv.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="guanwanjunIo.iws" />
@@ -58,11 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nodeEnv.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nodeEnv.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/md/nodeLearning/nodeEnv.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
-              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+            <state vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="180">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.12479201" vertical-offset="0" max-vertical-offset="601">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -99,6 +99,7 @@
         <option value="$PROJECT_DIR$/md/index.md" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/md/nodeLearning/nodeEnv.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -343,8 +344,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/md/nodeLearning/nodeEnv.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        <state vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="180">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12479201" vertical-offset="0" max-vertical-offset="601">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
