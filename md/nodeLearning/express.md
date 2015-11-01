@@ -27,6 +27,9 @@ Express 是一个基于 Node.js 平台的极简、灵活的 web 应用开发框�
 
 
 
+
+
+
 ##简单留言板
 
 下边即将做一个简单的留言板，需求如下：
@@ -40,4 +43,80 @@ Express 是一个基于 Node.js 平台的极简、灵活的 web 应用开发框�
 * mongodb存储数据
 
 * 使用swig模版（没有用jade，不习惯）
+
+
+
+
+###express生成及设置成swig模版
+
+####express应用生成
+通过应用生成器工具 express 可以快速创建一个应用的骨架。
+先安装一个生成器
+
+    $  npm install express-generator -g
+
+创建一个名为message的应用
+
+    $  express message
+
+express命令运行后，先不急着运行npm install，将package.json的"jade": "~1.11.0"改成"swig": "~1.4.2"，然后运行
+
+    $  npm install
+
+####设置成swig模版
+
+将message应用里的app.js里的
+
+    app.set('view engine', 'jade');
+改成
+
+    var swig = require('swig');
+    app.engine('html', swig.renderFile);
+    app.set('view engine', 'html');
+
+修改views目录里边的.jade后缀改为.html，修改layout.html为
+
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>{% block title %}My Site{% endblock %}</title>
+
+      {% block head %}
+      <link rel="stylesheet" href="main.css">
+      {% endblock %}
+    </head>
+    <body>
+    {% block content %}{% endblock %}
+    </body>
+    </html>
+
+修改index.html为
+
+    {% extends 'layout.html' %}
+
+    {% block title %}Message{% endblock %}
+
+    {% block head %}
+    {% parent %}<!--此处的意思为引用layout的head里的内容-->
+    <link rel="stylesheet" href="custom.css">
+    {% endblock %}
+
+    {% block content %}
+    <p>message there</p>
+    {% endblock %}
+
+
+###supervisor使用
+
+鉴于我们要经常修改html／js等文件，每次都重启node很不方便，所以安装supervisor来帮我们解决问题
+
+    $  npm install supervisor －g
+    $  supervisor -e html,js -- bin/www
+
+
+
+###swig模版用法
+[swig模版等用法](http://paularmstrong.github.io/swig/docs/)这里可以学习swig的用法，边用边学吧
+
 

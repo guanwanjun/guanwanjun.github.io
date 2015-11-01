@@ -15,7 +15,7 @@
         };
     }
 
-之前写过一段程序，操作dom，当浏览器resize时，重新执行程序输出，结果人为多操作了下窗口，$(window).resize频繁执行，浏览器崩溃了。
-后来用lazyFn来解决的
+之前写过一段程序，执行一系列dom操作等，单个运行没问题，当浏览器resize时，重新执行程序输出，人为频繁操作了下窗口，
+$(window).resize频繁执行，浏览器崩溃了。后来用lazyFn来解决的
 
-![](md/someFunc/lazyFun.png)
+![](http://guanwanjun.github.io/md/someFunc/lazyFun.png)
