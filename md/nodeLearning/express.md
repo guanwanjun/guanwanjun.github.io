@@ -30,7 +30,7 @@ $  npm init
 $ npm install express --save
 ``
 
-[helloworld小程序代码](./application/express/helloworld)
+[helloworld小程序代码](https://github.com/guanwanjun/guanwanjun.github.io/blob/master/md/nodeLearning/application/express/helloworld/)
 
 
 
