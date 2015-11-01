@@ -16,7 +16,11 @@
 </body>
 <script>
   var title = window.location.search.replace("?title=", ""),
-      titles = {"nodeLearning":"nodeLearning/nodeEnv.md"};
+      titles = {
+        "nodeLearning": "nodeLearning/nodeLearningList.md",
+        "nodeEnv": "nodeLearning/nodeEnv.md",
+        "express": "nodeLearning/express.md"
+      };
   $.get("./md/" + (title && titles[title]?titles[title]:"index.md"), function(md_content) {
     html_content = markdown.toHTML( md_content );
     $("body").html(html_content);

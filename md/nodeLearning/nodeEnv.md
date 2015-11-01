@@ -6,7 +6,7 @@
 如果没有安装node，在安装前可以考虑先安装nvm来管理node版本，nvm全称**Node Version Manager**，可以用来管理node版本.
 [访问其github地址](https://github.com/creationix/nvm)
 
-如果安装了稳定的node版本，并且不想折腾版本的差异，可以无视。
+如果安装了稳定的node版本，并且不想折腾版本的差异，可以安装个安装包，配置个全局环境变量跑跑（win下）。
 
 
 ###mac下安装nvm
