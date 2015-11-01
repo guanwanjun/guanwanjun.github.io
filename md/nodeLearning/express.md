@@ -7,17 +7,12 @@ Express 是一个基于 Node.js 平台的极简、灵活的 web 应用开发框�
 
 执行以下命令，创建一个目录
 
-``
-$  mkdir helloworld
-
-$  cd helloworld
-``
+    $  mkdir helloworld
+    $  cd helloworld
 
 使用npm init为这个应用创建一个package.json文件。这个命令会指导你输入一系列关于你应用的信息
 
-``
-$  npm init
-``
+    $  npm init
 
 关于什么是package.json，Mr. Nico Reed nicoreed有段解释
 
@@ -26,9 +21,7 @@ $  npm init
 
 在当前目录安装express，并且保存在package.json段dependencies列表中
 
-``
-$ npm install express --save
-``
+    $ npm install express --save
 
 [helloworld小程序代码](https://github.com/guanwanjun/guanwanjun.github.io/blob/master/md/nodeLearning/application/express/helloworld/)
 
