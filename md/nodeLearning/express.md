@@ -3,7 +3,7 @@
 Express 是一个基于 Node.js 平台的极简、灵活的 web 应用开发框架，它提供一系列强大的特性，帮助你创建各种 Web 和移动设备应用。
 [中文站介绍](http://www.expressjs.com.cn/)，[英文站介绍](http://expressjs.com/)
 
-##大家来said hello world
+##大家来say hello world
 
 执行以下命令，创建一个目录
 
@@ -26,4 +26,18 @@ Express 是一个基于 Node.js 平台的极简、灵活的 web 应用开发框�
 [helloworld小程序代码](https://github.com/guanwanjun/guanwanjun.github.io/blob/master/md/nodeLearning/application/express/helloworld/)
 
 
+
+##简单留言板
+
+下边即将做一个简单的留言板，需求如下：
+
+* 一个留言框页面，提供输入留言
+
+* 一个留言列表页，显示留言
+
+* 列表提供删除和编辑功能
+
+* mongodb存储数据
+
+* 使用swig模版（没有用jade，不习惯）
 

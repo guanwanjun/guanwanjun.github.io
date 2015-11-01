@@ -8,6 +8,9 @@
     body {
       font-family: Arial,sans-serif;
     }
+    img {
+      max-width: 70%;
+    }
   </style>
   <script src="markdown/markdown.js"></script>
   <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
@@ -19,7 +22,8 @@
       titles = {
         "nodeLearning": "nodeLearning/nodeLearningList.md",
         "nodeEnv": "nodeLearning/nodeEnv.md",
-        "express": "nodeLearning/express.md"
+        "express": "nodeLearning/express.md",
+        "someFunc": "someFunc/README.md"
       };
   $.get("./md/" + (title && titles[title]?titles[title]:"index.md"), function(md_content) {
     html_content = markdown.toHTML( md_content );
