@@ -83,7 +83,7 @@ express命令运行后，先不急着运行npm install，将package.json的"jade
       <title>{% block title %}My Site{% endblock %}</title>
 
       {% block head %}
-      <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="stylesheets/style.css">
       {% endblock %}
     </head>
     <body>
@@ -99,7 +99,6 @@ express命令运行后，先不急着运行npm install，将package.json的"jade
 
     {% block head %}
     {% parent %}<!--此处的意思为引用layout的head里的内容-->
-    <link rel="stylesheet" href="custom.css">
     {% endblock %}
 
     {% block content %}
@@ -115,8 +114,15 @@ express命令运行后，先不急着运行npm install，将package.json的"jade
     $  supervisor -e html,js -- bin/www
 
 
+通过supervisor启动后，访问3000端口查看网页，可以看到网页显示message there
+
 
 ###swig模版用法
 [swig模版等用法](http://paularmstrong.github.io/swig/docs/)这里可以学习swig的用法，边用边学吧
 
 
+###利用[mongoose](https://github.com/Automattic/mongoose)，安装mongoose
+
+  $  npm install mongoose
+
+[一个超级简单的基于node+express+swig+mongodb的留言板](https://github.com/guanwanjun/message)
