@@ -1,6 +1,6 @@
 #一些方法的运用
 
-##Make Fun Lazy:在特定的时间段内，只执行最后一次fn
+##Make Func Lazy:在特定的时间段内，只执行最后一次fn
 
     var makeLazy = function(fn, lazyTime) {
         var timer = 0;
